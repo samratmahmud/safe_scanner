@@ -158,7 +158,7 @@ function Cards() {
               <div className="flex gap-3 justify-between p-3">
                 {item.footer.map((items, index) => (
                   <div key={index} className="">
-                    <div className="text-xs text-slate-500 mb-0.5 whitespace-nowrap">
+                    <div className="text-xs text-slate-500 mb-0.5 whitespace-nowrap md:whitespace-normal">
                       {items.name}
                     </div>
                     <div className="text-md font-medium text-slate-300">
