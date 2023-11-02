@@ -3,22 +3,19 @@ import React from "react";
 
 const feedback = [
   {
-    thumbneil1: "/images/Group 61.png",
-    thumbneil2: "/images/Line 6.png",
+    thumbneil1: "/images/Frame 107.svg",
     title: "MVP offers address search for wallet balance and activity.",
   },
   {
-    thumbneil1: "/images/Group 63.png",
-    thumbneil2: "/images/Group 64.png",
+    thumbneil1: "/images/Frame 107 (1).svg",
     title: "Smart contract execution history is visible and searchable.",
   },
   {
-    thumbneil1: "/images/Group 63.png",
-    thumbneil2: "/images/Group 64.png",
+    thumbneil1: "/images/Frame 107 (2).svg",
     title: "Smart contract execution history is visible and searchable.",
   },
   {
-    thumbneil1: "/images/Group 63.png",
+    thumbneil1: "/images/Frame 107 (3).svg",
     title: "Smart contract execution history is visible and searchable.",
   },
 ];
@@ -35,11 +32,10 @@ function Features() {
       <div className="max-w-[632px] m-auto border-[2px] border-gray-400 rounded-md p-4 mb-5 flex flex-col gap-1">
         {feedback.map((item, index) => (
           <div key={index} className="flex gap-2 justify-center">
-            <div className="flex flex-col items-center">
-              <img className="w-7" src={item.thumbneil1} alt="" />
-              <img className="w-0.5" src={item.thumbneil2} alt="" />
+            <div className="flex items-center">
+              <img className="-mt-1.5" src={item.thumbneil1} alt="" />
             </div>
-            <div className="text-base font-medium text-slate-300 mb-3 last:mb-0">
+            <div className="text-base font-medium text-slate-300">
               {item.title}
             </div>
           </div>
