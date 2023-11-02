@@ -4,7 +4,7 @@ import React from "react";
 function Header() {
   return (
     <section className="container mb-11">
-      <div className="text-3xl font-bold text-white max-w-[1000px] m-auto text-center mb-11">
+      <div className="lg:text-3xl text-2xl font-bold text-white max-w-[1000px] m-auto text-center mb-11">
         Super User-friendly Transaction Explorer for the Safe Eco-system
       </div>
       <div className="flex justify-center mb-2">
@@ -16,7 +16,7 @@ function Header() {
           />
         </div>
         <input
-          className="bg-emerald-900 w-3/4 focus:outline-none border-y-2 border-r-2 rounded-r-md border-emerald-400 placeholder:text-neutral-400 pr-4"
+          className="bg-emerald-900 md:w-3/4 w-full focus:outline-none border-y-2 border-r-2 rounded-r-md border-emerald-400 placeholder:text-neutral-400 pr-4"
           type="text"
           placeholder="Search for addresses & hashes..."
         />

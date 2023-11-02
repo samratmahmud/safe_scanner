@@ -5,6 +5,7 @@ import Cards from "./home/Cards";
 import ButtonGroup from "./home/ButtonGroup";
 import Features from "./home/Features";
 import Footer from "./home/Footer";
+import SearchDetails from "@/components/template/SearchDetails";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <ButtonGroup />
       <Features />
       <Footer />
+      {/* <SearchDetails /> */}
     </div>
   );
 }

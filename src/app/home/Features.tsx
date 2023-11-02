@@ -32,20 +32,20 @@ function Features() {
       <div className="text-base text-slate-300 mb-5 text-center">
         See our latest features and leave feedback
       </div>
-      <div className="max-w-[632px] m-auto border-[2px] border-gray-900 rounded-md p-4 mb-5">
+      <div className="max-w-[632px] m-auto border-[2px] border-gray-400 rounded-md p-4 mb-5 flex flex-col gap-1">
         {feedback.map((item, index) => (
-          <div key={index} className="flex gap-2 items-center justify-center">
+          <div key={index} className="flex gap-2 justify-center">
             <div className="flex flex-col items-center">
               <img className="w-7" src={item.thumbneil1} alt="" />
               <img className="w-0.5" src={item.thumbneil2} alt="" />
             </div>
-            <div className="text-base font-medium text-slate-300 mb-3">
+            <div className="text-base font-medium text-slate-300 mb-3 last:mb-0">
               {item.title}
             </div>
           </div>
         ))}
       </div>
-      <div className="flex justify-center gap-2">
+      <div className="flex md:flex-row flex-col justify-center gap-2">
         <ButtonProps
           thumbneil="/images/Group 59.svg"
           name="Leave Feeback"

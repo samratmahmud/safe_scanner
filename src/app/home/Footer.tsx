@@ -88,6 +88,9 @@ function Footer() {
           </div>
         ))}
       </div>
+      <div className="text-md text-neutral-400 uppercase pb-12">
+        ©2023 Safescanner.xyz
+      </div>
     </section>
   );
 }
