@@ -1,3 +1,4 @@
+import ButtonProps from "@/components/template/ButtonProps";
 import Link from "next/link";
 import React from "react";
 
@@ -39,11 +40,11 @@ const buttonProps = [
 function ButtonGroup() {
   return (
     <section className="container">
-      <div className="py-10 bg-stone-700 rounded-md">
+      <div className="py-10 bg-stone-700 rounded-md xl:px-[17%] lg:px-[10%] px-2 mb-20">
         <div className="text-xl font-medium text-white text-center mb-5">
           Available 8+ Networks
         </div>
-        <div className="grid grid-cols-4 gap-3 py-2 px-32">
+        <div className="flex flex-wrap gap-3 py-6 justify-center mb-5">
           {buttonProps.map((item, index) => (
             <div key={index} className="">
               <Link
@@ -53,12 +54,20 @@ function ButtonGroup() {
                 <div>
                   <img src={item.thumbneil} alt="" />
                 </div>
-                <div className="text-base font-medium text-stone-900">
+                <div className="lg:text-base text-md font-medium text-stone-900">
                   {item.title}
                 </div>
               </Link>
             </div>
           ))}
+        </div>
+        <div className="flex md:flex-row flex-col gap-2 justify-center">
+          <ButtonProps
+            name="See Documentation"
+            thumbneil="/images/Group 57.svg"
+            theme="green"
+          />
+          <ButtonProps name="Work with Us" thumbneil="/images/briefcase.svg" />
         </div>
       </div>
     </section>
